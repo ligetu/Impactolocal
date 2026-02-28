@@ -1,0 +1,125 @@
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --primary: #22c55e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: linear-gradient(180deg, #020617, #020617 40%, #020617);
+  color: var(--text);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* ===== HEADER LOGO OCCUPANT 100% ===== */
+header {
+  display: block;
+  gap: 8px;
+}
+
+.bank-header {
+  display: flex !important; /* logo horizontal */
+  align-items: center;
+}
+
+.logo-stretch {
+  width: 100%;        /* occupe toute la largeur du container */
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain; /* garde proportions de l’image */
+}
+
+/* ===== NAVIGATION ===== */
+nav a {
+  margin-right: 12px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav a:hover { 
+  color: var(--text); 
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: radial-gradient(1200px 600px at 10% -20%, #16a34a22, transparent),
+              radial-gradient(800px 400px at 90% 10%, #22c55e22, transparent);
+  border: 1px solid #1f2933;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.cards li {
+  background: var(--card);
+  border: 1px solid #1f2933;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* ===== FORM ===== */
+form {
+  max-width: 520px;
+  display: grid;
+  gap: 12px;
+}
+
+label { 
+  display: grid; 
+  gap: 6px; 
+}
+
+input, textarea {
+  background: #020617;
+  border: 1px solid #1f2933;
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.consent {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #052e16;
+  border: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover { 
+  filter: brightness(1.05); 
+}
+
+/* ===== FOOTER ===== */
+footer {
+  border-top: 1px solid #1f2933;
+  margin-top: 40px;
+  padding-top: 16px;
+  color: var(--muted);
+}

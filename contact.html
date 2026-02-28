@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto & Cita — Impact Local</title>
+  <meta name="description" content="Solicita una cita física con Impact Local." />
+  <link rel="canonical" href="https://tudomaine.com/contact.html" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <br>
+  <header class="container">
+  <div class="bank-header">
+    <!-- logo estirado para ocupar el espacio -->
+    <img src="logo.png" alt="Logo Impact Local" class="logo-stretch">
+  </div>
+<br>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="aides.html">Tipos de ayuda</a>
+    <a href="contact.html">Contacto & Cita</a>
+  </nav>
+</header>
+
+  <main class="container">
+    <h2>Solicitar una cita física</h2>
+
+    <form id="whatsappForm">
+      <label>
+        Nombre
+        <input type="text" id="nom" required />
+      </label>
+
+      <label>
+        Teléfono
+        <input type="tel" id="telephone" required />
+      </label>
+
+      <label>
+        Mensaje
+        <textarea id="message" rows="4" required></textarea>
+      </label>
+
+      <label class="consent">
+        <input type="checkbox" id="consentement" required />
+        Acepto ser redirigido a WhatsApp para enviar mi solicitud. Ningún dato se almacena en el sitio.
+      </label>
+
+      <button class="btn" type="submit">Enviar vía WhatsApp</button>
+    </form>
+  </main>
+
+  <footer class="container">
+    <p>© 2026 Impact Local</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
